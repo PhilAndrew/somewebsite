@@ -8,7 +8,7 @@ HTML5 display definitions
 * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
 */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, nav, section, summary {
     display: block
 }
 
@@ -580,7 +580,6 @@ Hero
 .hero {
     position: relative;
     padding: 60px 0 60px 0;
-    min-height: 800px;
     background: rgb(40, 70, 102) url('../img/hero-01.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
@@ -706,7 +705,17 @@ Features Slider
 .features-slider .flickity-page-dots .dot {
     margin: 0 12px 0 0;
 }
+/*========================================================================
+Team List
+============================================================================ */
 
+.team-list ul{
+   padding-left: 15px;
+}
+
+.location-map{
+    height: 380px;
+}
 /* ==========================================================================
 Features List
 ========================================================================== */
@@ -791,28 +800,24 @@ Showcase
 }
 .device {
     position: absolute;
-    top: -60px;
+    top: -100px;
     left: 20%;
-    min-height: 676px;
-    width: 359px;
+    width: 356px;
     background: url('../img/iphone-skeleton.png') no-repeat center center;
 }
 .device-content {
     position: absolute;
-    top: 115px;
     left: 56px;
     width: 247px;
-    height: 445px;
+    height: 356px;
     background: rgba(0, 0, 0, 0.3);
 }
 .device-content img {
     width: 247px;
-    height: 445px;
 }
 .showcase-wrap {
     position: relative;
     padding: 100px 0;
-    min-height: 600px;
 }
 .showcase-slider ul {
     margin: 0;
@@ -824,21 +829,24 @@ Showcase
 }
 
 /* ==========================================================================
-Screenshots Intro
+products Intro
 ========================================================================== */
-.screenshots-intro {
-    padding: 170px 0 100px 0;
+.products-desc {
+    padding: 40px 0 100px 0;
     background-color: #f6f7f9;
 }
-.screenshots-intro h1 {
+.products-desc h1 {
     margin-bottom: 20px;
     color: #24374b;
     font-weight: 400;
     font-size: 22px;
 }
-.screenshots-intro p {
+.products-desc p {
     margin-bottom: 25px;
     color: #778899;
+}
+.products-desc ol {
+    padding-left: 15px;
 }
 
 /* ==========================================================================
@@ -945,7 +953,9 @@ Download Now
 Footer
 ========================================================================== */
 footer {
-    padding: 100px 0
+    margin-top: 50px;
+    padding: 50px 0;
+    border-top: 5px solid;
 }
 footer p {
     color: #c7cacc;
@@ -1090,4 +1100,14 @@ Waypoints
 .delay-1s {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
+}
+
+.logo {
+    max-width: 150px;
+    position: absolute;
+}
+
+.footer-logo {
+    max-width: 100px;
+    position: relative;
 }
